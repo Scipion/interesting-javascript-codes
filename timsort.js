@@ -674,4 +674,3 @@ function arraycopy(s,spos,d,dpos,len){
 		d[dpos+len]=a[len];
 	}
 }
-
