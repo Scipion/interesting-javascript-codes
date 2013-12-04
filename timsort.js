@@ -149,6 +149,9 @@ Array.prototype.timsort = function(comp){
          */
 	function countRunAndMakeAscending (a, lo, hi, compare) {
 		var runHi = lo + 1;
+		if (runHi === hi) {
+			return 1;
+		}
 
 		// Find end of run, and reverse range if descending
 		if (compare(a[runHi++], a[lo]) < 0) { // Descending
